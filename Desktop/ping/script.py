@@ -13,3 +13,5 @@ def ping_server(host):
         print(f"Ping output for {host}:\n{output}")
     except subprocess.CalledProcessError as e:
         print(f"Failed to ping {host}. Error:\n{e.output}")
+
+ping_server('google.com')        
